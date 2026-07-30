@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Papagayo Petit Café & Vermouth Bar | Córdoba Centro</title>
+    <meta name="description" content="Cafetería y vermuth bar en el centro de Córdoba. Espresso, pastelería artesanal, vermuth de la casa. Abierto todos los días.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fijo -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <span class="header__logo-circle">EL PAPAGAYO</span>
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <a href="#about" class="header__nav-link">Nosotros</a>
+                <a href="#menu" class="header__nav-link">Menú</a>
+                <a href="#specialty" class="header__nav-link">Estrella</a>
+                <a href="#gallery" class="header__nav-link">Galería</a>
+                <a href="#contact" class="header__nav-link">Contacto</a>
+            </nav>
+            <a href="https://wa.me/5493516413655?text=Hola!%20Quiero%20hacer%20una%20consulta" class="header__cta" target="_blank" rel="noopener">
+                WhatsApp
+            </a>
+            <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkLU2CqVhwC43Flmy4GYBQKWvkHo0gflHA282PcChtMKKlTeRpu816ITrMYQ6-oU6EkxOlP2Rwaa6YwGY14CNQJLJmqWdN9cL_BZCKuKbli8PZBnEa8FyBK0JlNUrVruz2_JJkb8ncxE0e5=s680-w680-h510-rw" alt="Entrada de El Papagayo" class="hero__bg-img">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__pre fade-up">Córdoba Centro · Abierto desde las 8am</p>
+            <h1 class="hero__title fade-up delay-1">
+                <span class="hero__title-line">El café donde</span>
+                <span class="hero__title-line">el día empieza</span>
+                <span class="hero__title-line hero__title-accent">con calma.</span>
+            </h1>
+            <p class="hero__subtitle fade-up delay-2">
+                Espresso, pastelería artesanal y vermuth de la casa.<br>
+                Un rincón con alma europea en el corazón de la ciudad.
+            </p>
+            <div class="hero__actions fade-up delay-3">
+                <a href="#menu" class="btn btn--primary">Ver el menú</a>
+                <a href="https://wa.me/5493516413655?text=Hola!%20Quiero%20reservar%20una%20mesa" class="btn btn--secondary" target="_blank" rel="noopener">Reservar mesa</a>
+            </div>
+            <div class="hero__scroll fade-up delay-4">
+                <div class="hero__scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introducción / Diferenciales -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label fade-up">Por qué El Papagayo</div>
+            <div class="about__grid">
+                <div class="about__text fade-up">
+                    <h2 class="section-title">Un café que se siente<br><em>en casa</em></h2>
+                    <p class="about__desc">
+                        En el corazón de Córdoba, El Papagayo nació como un proyecto que une la tradición cafetera argentina con una estética europea cuidada al detalle. No somos un café más: somos ese lugar al que volvés sin pensarlo, porque el café sabe como debe, el pan huele a panadería de verdad, y la atención te hace sentir parte de algo.
+                    </p>
+                </div>
+                <div class="about__features">
+                    <div class="feature fade-up">
+                        <div class="feature__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="24" cy="24" r="10"/>
+                                <path d="M24 14V4M24 44V34M14 24H4M44 24H34"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Café de especialidad</h3>
+                        <p class="feature__desc">Granos selectos de Brasil y Colombia, tostados para resaltar notas dulces y achocolatadas. Cada taza es un acto de precisión.</p>
+                    </div>
+                    <div class="feature fade-up delay-1">
+                        <div class="feature__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 40L24 8L40 40H8Z"/>
+                                <path d="M16 40L24 24L32 40"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Panadería propia</h3>
+                        <p class="feature__desc">Medialunas, croissants, mafaldas y tartas horneados cada mañana. Ingredientes reales, masa madurada, cero atajos.</p>
+                    </div>
+                    <div class="feature fade-up delay-2">
+                        <div class="feature__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 36C12 36 12 20 24 12C36 20 36 36 36 36"/>
+                                <path d="M20 36C20 32 28 32 28 36"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Vermuth bar</h3>
+                        <p class="feature__desc">La tradición del aperitivo argentino, con una carta curada de vermouths nacionales que acompaña la tarde con estilo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-label fade-up">Nuestra carta</div>
+            <h2 class="section-title section-title--center fade-up">Menú</h2>
+            <p class="menu__intro fade-up">Desayuno, almuerzo, merienda o un vermuth a la tarde. Todo hecho con tiempo y dedicación.</p>
+            
+            <div class="menu__tabs fade-up">
+                <button class="menu__tab active" data-tab="cafe">Cafés</button>
+                <button class="menu__tab" data-tab="otras">Otras Bebidas</button>
+                <button class="menu__tab" data-tab="vermut">Vermouth</button>
+                <button class="menu__tab" data-tab="bakery">Bakery</button>
+                <button class="menu__tab" data-tab="sandwiches">Sandwiches & Bowls</button>
+            </div>
+
+            <div class="menu__grid" id="menuGrid">
+                <!-- Café Tab -->
+                <div class="menu__category active" data-category="cafe">
+                    <h3 class="menu__category-title">Cafés</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Ristretto / Espresso</h4>
+                                <span class="menu__item-price">$3.000</span>
+                            </div>
+                            <p class="menu__item-desc">Chico</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Magic</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                            <p class="menu__item-desc">Chico</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Espresso Doble</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                            <p class="menu__item-desc">60ml, chico</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Lágrima</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                            <p class="menu__item-desc">Chico, mediano</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Flat White / Cappuccino</h4>
+                                <span class="menu__item-price">$4.500</span>
+                            </div>
+                            <p class="menu__item-desc">Mediano, grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Americano</h4>
+                                <span class="menu__item-price">$4.000</span>
+                            </div>
+                            <p class="menu__item-desc">Mediano</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Latte</h4>
+                                <span class="menu__item-price">$4.500</span>
+                            </div>
+                            <p class="menu__item-desc">Mediano, grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Moccachino</h4>
+                                <span class="menu__item-price">$4.900</span>
+                            </div>
+                            <p class="menu__item-desc">Mediano, grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Iced Americano</h4>
+                                <span class="menu__item-price">$4.500</span>
+                            </div>
+                            <p class="menu__item-desc">Grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Iced Latte / Iced Flatwhite</h4>
+                                <span class="menu__item-price">$5.100</span>
+                            </div>
+                            <p class="menu__item-desc">Grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Espresso Tonic / Algarroba Tonic</h4>
+                                <span class="menu__item-price">$5.300</span>
+                            </div>
+                            <p class="menu__item-desc">Grande</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Café Filtrado V60</h4>
+                                <span class="menu__item-price">$7.000</span>
+                            </div>
+                            <p class="menu__item-desc">Grande</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otras Bebidas Tab -->
+                <div class="menu__category" data-category="otras">
+                    <h3 class="menu__category-title">Otras Bebidas</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Jugos Naturales</h4>
+                                <span class="menu__item-price">$4.800</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Limonada</h4>
+                                <span class="menu__item-price">$3.900</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Kombucha Brett & Co</h4>
+                                <span class="menu__item-price">$5.200</span>
+                            </div>
+                            <p class="menu__item-desc">500ml</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Agua Natural O Gasificada</h4>
+                                <span class="menu__item-price">$3.000</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Gaseosas</h4>
+                                <span class="menu__item-price">$3.700</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Té Intizen // Curate Alma // Té Frío</h4>
+                                <span class="menu__item-price">$3.400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vermouth Tab -->
+                <div class="menu__category" data-category="vermut">
+                    <h3 class="menu__category-title">Vermouth</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Desconfiado Bodega Séptima</h4>
+                                <span class="menu__item-price">$8.500</span>
+                            </div>
+                            <p class="menu__item-desc">Rosso</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">La Fuerza</h4>
+                                <span class="menu__item-price">$8.500</span>
+                            </div>
+                            <p class="menu__item-desc">Bianco, rosso</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Sin Apuro</h4>
+                                <span class="menu__item-price">$7.500</span>
+                            </div>
+                            <p class="menu__item-desc">Rosado de isabella (Córdoba)</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Único Rosso Joven // Único Rosso Reserva</h4>
+                                <span class="menu__item-price">$7.000</span>
+                            </div>
+                            <p class="menu__item-desc">Rosso / bianco</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Lunfa</h4>
+                                <span class="menu__item-price">$7.500</span>
+                            </div>
+                            <p class="menu__item-desc">Rosado, rosso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakery Tab -->
+                <div class="menu__category" data-category="bakery">
+                    <h3 class="menu__category-title">Bakery</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Cookie</h4>
+                                <span class="menu__item-price">$2.800</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Alfajor Maní Dulce de Leche</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Alfajor de Pistachos y Cítricos</h4>
+                                <span class="menu__item-price">$4.100</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Budín</h4>
+                                <span class="menu__item-price">$3.700</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Mafalda</h4>
+                                <span class="menu__item-price">$6.100</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Mafalda Vegetariana</h4>
+                                <span class="menu__item-price">$6.300</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Carrot Cake</h4>
+                                <span class="menu__item-price">$6.900</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Tarta de Ricota / Manzana</h4>
+                                <span class="menu__item-price">$4.500</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Croissant / Medialuna</h4>
+                                <span class="menu__item-price">$3.600</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Roll de Canela</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Pan de Chocolate</h4>
+                                <span class="menu__item-price">$4.600</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Laminados Especiales</h4>
+                                <span class="menu__item-price">$4.600</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Chipa de Queso Azul</h4>
+                                <span class="menu__item-price">$3.100</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Scon de Queso</h4>
+                                <span class="menu__item-price">$3.500</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Tostadas con Queso Crema y Mermelada Casera</h4>
+                                <span class="menu__item-price">$4.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Tab -->
+                <div class="menu__category" data-category="sandwiches">
+                    <h3 class="menu__category-title">Sandwiches y Bowls</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Croque Monsieur / Croque Madame</h4>
+                                <span class="menu__item-price">$9.000</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Tostón con Palta y Huevo</h4>
+                                <span class="menu__item-price">$8.100</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Pan con Tomate, Aceite de Oliva y Jamón Crudo</h4>
+                                <span class="menu__item-price">$7.000</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Sándwich del Día en Pan de Masa Madre</h4>
+                                <span class="menu__item-price">$8.000</span>
+                            </div>
+                            <p class="menu__item-desc">Jamón cocido, jamón crudo o vegetariano</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Yogurt con Granola y Frutas de Estación</h4>
+                                <span class="menu__item-price">$7.500</span>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-header">
+                                <h4 class="menu__item-name">Frutas de Estación</h4>
+                                <span class="menu__item-price">$4.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Café en grano -->
+            <div class="menu__grain fade-up">
+                <h3 class="menu__grain-title">Café en Grano Shiok</h3>
+                <div class="menu__grain-items">
+                    <div class="menu__grain-item">
+                        <span class="menu__grain-name">Brasil Natural Caramel 250gr</span>
+                        <span class="menu__grain-price">$21.500</span>
+                    </div>
+                    <div class="menu__grain-item">
+                        <span class="menu__grain-name">Brasil Bourbon Rojo 250gr</span>
+                        <span class="menu__grain-price">$21.500</span>
+                    </div>
+                    <div class="menu__grain-item">
+                        <span class="menu__grain-name">Brasil Topazio 250gr</span>
+                        <span class="menu__grain-price">$23.500</span>
+                    </div>
+                    <div class="menu__grain-item">
+                        <span class="menu__grain-name">Blend Brasil / Colombia 250gr</span>
+                        <span class="menu__grain-price">$23.500</span>
+                    </div>
+                    <div class="menu__grain-item">
+                        <span class="menu__grain-name">Brasil Caracolito 250gr</span>
+                        <span class="menu__grain-price">$23.500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto estrella -->
+    <section class="specialty" id="specialty">
+        <div class="container">
+            <div class="specialty__grid">
+                <div class="specialty__image fade-up">
+                    <img src="https://atuwfbqtoadwjamrueqm.supabase.co/storage/v1/object/public/chat-media/demo-images/ChIJOw0qujKjMpQRZro0ecLRV68/1785412988297-image_2026-07-30_080308292.png" alt="Flat White en El Papagayo" loading="lazy">
+                </div>
+                <div class="specialty__content fade-up delay-1">
+                    <div class="section-label">Nuestra estrella</div>
+                    <h2 class="specialty__title">El Flat White<br>que te cambia la mañana</h2>
+                    <p class="specialty__desc">
+                        Espresso doble con leche microespumada, densa y sedosa. No es solo un café: es el momento en que todo se detiene un segundo. Intenso pero suave, con esa textura que te cubre el paladar sin pesadez. Nuestros baristas lo preparan con una técnica que toma meses en dominar.
+                    </p>
+                    <div class="specialty__details">
+                        <div class="specialty__detail">
+                            <span class="specialty__detail-label">Extracción</span>
+                            <span class="specialty__detail-value">Doble ristretto</span>
+                        </div>
+                        <div class="specialty__detail">
+                            <span class="specialty__detail-label">Leche</span>
+                            <span class="specialty__detail-value">Microespumada 65°C</span>
+                        </div>
+                        <div class="specialty__detail">
+                            <span class="specialty__detail-label">Precio</span>
+                            <span class="specialty__detail-value">$4.500</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5493516413655?text=Hola!%20Quiero%20pedir%20un%20Flat%20White" class="btn btn--primary" target="_blank" rel="noopener">Pedir ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-label fade-up">El espacio</div>
+            <h2 class="section-title section-title--center fade-up">Momentos</h2>
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--wide fade-up">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkUdWCZqgnxxFS5bDohmY11dO_YBAWGaPUkEENII11UjpQW40gWIAgQHcouXiU5FKQNndox3qCe4xSY0nQroKU0RlLT-kz_6MuFoYisMZNq4IjOpCx2FyNxoRqEyllJCxBlTKWhVw=s680-w680-h510-rw" alt="Vitrina de dulces" loading="lazy">
+                </div>
+                <div class="gallery__item fade-up delay-1">
+                    <img src="https://atuwfbqtoadwjamrueqm.supabase.co/storage/v1/object/public/chat-media/demo-images/ChIJOw0qujKjMpQRZro0ecLRV68/1785413091199-image_2026-07-30_080451194.png" alt="Dulces de hojaldre" loading="lazy">
+                </div>
+                <div class="gallery__item fade-up delay-2">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWYcK8q3SKwrUO5nHXU3N7iFhDB2v9e6pYzos8VcQFWZ1yZdwd895tnYAOIDvZ16p6gfsQV4mNecxQAoL_UtWu0mQKB0KJSpW6j74axfXkSJzjd0kuXe9QUrR-RfNUWVYPPMxYl4_g4FI=s680-w680-h510-rw" alt="Interior del local" loading="lazy">
+                </div>
+                <div class="gallery__item fade-up delay-3">
+                    <img src="https://atuwfbqtoadwjamrueqm.supabase.co/storage/v1/object/public/chat-media/demo-images/ChIJOw0qujKjMpQRZro0ecLRV68/1785413068886-image_2026-07-30_080428881.png" alt="Varios tipos de café" loading="lazy">
+                </div>
+                <div class="gallery__item gallery__item--wide fade-up delay-4">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfi9xbN-gMXC8msLvOttt3wMtqlRqsNDUPGipRU_tWBtPKxg36mncbQbKMT_MqXU3gKWRkQY5I2KV94_ShcLVZQrU8sMKe4IBwK2fr7JCe1adzhESHmA1y5i1hF6Zq68fqxmZR3g=s680-w680-h510-rw" alt="Espacios para trabajar" loading="lazy">
+                </div>
+                <div class="gallery__item fade-up delay-5">
+                    <img src="https://atuwfbqtoadwjamrueqm.supabase.co/storage/v1/object/public/chat-media/demo-images/ChIJOw0qujKjMpQRZro0ecLRV68/1785413175970-image_2026-07-30_080615965.png" alt="Sirviendo dulces" loading="lazy">
+                </div>
+                <div class="gallery__item fade-up delay-6">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWloBK__RYN-1kNgL_lUSK8L9sfWURRCCQSZkvOpJwg2cZNe6MhR8JX4qXpDhOUuOHVLuUCPz_jGqcekAA6rXGK5HRhsAPSuvDo3nLE4AhVCSALCvPksT7IGVjKntNPT7AvWnuCelwCCouNB=s680-w680-h510-rw" alt="Mesas exterior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-label fade-up">Lo que dicen</div>
+            <h2 class="section-title section-title--center fade-up">Opiniones reales</h2>
+            <div class="testimonials__rating fade-up">
+                <span class="testimonials__rating-number">4.4</span>
+                <span class="testimonials__rating-stars">★★★★☆</span>
+                <span class="testimonials__rating-text">Basado en 640 reseñas</span>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial fade-up">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">M</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Martín L.</h4>
+                            <span class="testimonial__date">hace 3 semanas</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"Si el centro de la ciudad fuera un sueño mañanero, Papagayo Petit sería su banda sonora. El ambiente es íntimo y relajado, perfecto para arrancar el día sin prisas. El café — ¡qué café! — intenso y cremoso."</p>
+                </div>
+                <div class="testimonial fade-up delay-1">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">C</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Camila R.</h4>
+                            <span class="testimonial__date">hace 1 semana</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"Nunca fui a una cafetería tan linda como esta, fascinada. La atención muy buena. Probamos el Croque Monsieur y el Flat White. Delicioso todo."</p>
+                </div>
+                <div class="testimonial fade-up delay-2">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">A</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Ana P.</h4>
+                            <span class="testimonial__date">hace 2 meses</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"Tiene un espacio hermoso, con patios internos muy bonitos y cómodos, el café riquísimo y el tostado con palta y huevo revuelto que estaba delicioso. Más que recomendado."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momentos de uso -->
+    <section class="moments">
+        <div class="container">
+            <div class="section-label fade-up">Cuándo venir</div>
+            <h2 class="section-title fade-up">Un momento para cada cosa</h2>
+            <div class="moments__grid">
+                <div class="moment fade-up">
+                    <div class="moment__image">
+                        <img src="https://atuwfbqtoadwjamrueqm.supabase.co/storage/v1/object/public/chat-media/demo-images/ChIJOw0qujKjMpQRZro0ecLRV68/1785413015189-image_2026-07-30_080335184.png" alt="Desayuno en El Papagayo" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">8:00 – 11:00</span>
+                        <h3 class="moment__title">El desayuno</h3>
+                        <p class="moment__desc">Medialunas recién horneadas, café con leche espumada, luz natural entrando por las ventanas. El mejor arranque de día que Córdoba tiene para ofrecer.</p>
+                    </div>
+                </div>
+                <div class="moment fade-up delay-1">
+                    <div class="moment__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnnM6HTqC-YusV7y9YK3uz59O_Z0toVAQ6ESGBtQ3RWkK50E-MeLhNP6B3BTWNlwe1UkQakwvJoXS8zJqrnxzDit2KSyWYPXlxwlNSRc602XjJ4ygzaaa6O6jKgpdY5FJ4oIOSE=s680-w680-h510-rw" alt="Mostrador principal" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">12:00 – 15:00</span>
+                        <h3 class="moment__title">El almuerzo</h3>
+                        <p class="moment__desc">Croque Monsieur, tostones con palta, sándwiches de masa madre. Platos simples ejecutados con excelencia, en un ambiente que invita a alargar la sobremesa.</p>
+                    </div>
+                </div>
+                <div class="moment fade-up delay-2">
+                    <div class="moment__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWloBK__RYN-1kNgL_lUSK8L9sfWURRCCQSZkvOpJwg2cZNe6MhR8JX4qXpDhOUuOHVLuUCPz_jGqcekAA6rXGK5HRhsAPSuvDo3nLE4AhVCSALCvPksT7IGVjKntNPT7AvWnuCelwCCouNB=s680-w680-h510-rw" alt="Mesas exterior" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">16:00 – 20:00</span>
+                        <h3 class="moment__title">La tarde</h3>
+                        <p class="moment__desc">Vermuth de la casa, bollitos calientes, la tarde cordobesa que se disfruta sin apuro. Porque aquí el tiempo se mide en sorbos, no en relojes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="story">
+        <div class="container">
+            <div class="story__grid">
+                <div class="story__content fade-up">
+                    <div class="section-label">Nuestra historia</div>
+                    <h2 class="section-title">De Córdoba, <em>para Córdoba</em></h2>
+                    <p class="story__text">
+                        El Papagayo nació de una idea simple pero ambiciosa: crear un café donde la gente del centro se sienta como en casa, pero con un toque de sofisticación que no se consigue en cualquier lado. Elegimos el nombre "Petit Café" porque queríamos ese espíritu europeo de las esquinas parisinas, pero con alma cordobesa.
+                    </p>
+                    <p class="story__text">
+                        Hoy somos ese lugar que el barrio adoptó. Donde el barista te recuerda tu nombre, donde el vermuth de la tarde se toma mirando la calle, y donde cada detalle — desde la madera de las mesas hasta el verde de los taburetes — fue pensado para que te quieras quedar.
+                    </p>
+                </div>
+                <div class="story__team fade-up delay-1">
+                    <h3 class="story__team-title">El equipo</h3>
+                    <div class="story__members">
+                        <div class="story__member">
+                            <div class="story__member-avatar">L</div>
+                            <div>
+                                <h4 class="story__member-name">Lucas</h4>
+                                <span class="story__member-role">Barista en jefe</span>
+                            </div>
+                        </div>
+                        <div class="story__member">
+                            <div class="story__member-avatar">V</div>
+                            <div>
+                                <h4 class="story__member-name">Valentina</h4>
+                                <span class="story__member-role">Pastelera</span>
+                            </div>
+                        </div>
+                        <div class="story__member">
+                            <div class="story__member-avatar">M</div>
+                            <div>
+                                <h4 class="story__member-name">Martín</h4>
+                                <span class="story__member-role">Fundador</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prensa -->
+    <section class="press">
+        <div class="container">
+            <div class="section-label fade-up">En los medios</div>
+            <h2 class="section-title section-title--center fade-up">Lo que dicen de nosotros</h2>
+            <div class="press__grid">
+                <div class="press__quote fade-up">
+                    <p class="press__text">"El Papagayo es esa clase de café que hace que todo el barrio se sienta orgulloso. Atención impecable, café de primer nivel, y un ambiente que te atrapa."</p>
+                    <span class="press__source">— La Voz del Centro</span>
+                </div>
+                <div class="press__quote fade-up delay-1">
+                    <p class="press__text">"En un mar de cafés genéricos, El Papagayo se distingue por la consistencia. Cada visita es igual de buena que la anterior, y eso en esta industria vale oro."</p>
+                    <span class="press__source">— Córdoba Gastronómica</span>
+                </div>
+                <div class="press__quote fade-up delay-2">
+                    <p class="press__text">"El vermuth de la tarde se convirtió en ritual. Bunos vermuths, buena música, buena compañía. Los martes son imperdibles."</p>
+                    <span class="press__source">— Revista Sabor Local</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info fade-up">
+                    <div class="section-label">Visitános</div>
+                    <h2 class="section-title">Encontranos en<br><em>el centro</em></h2>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">Dirección</span>
+                            <a href="https://maps.google.com/?q=Arturo+M.+Bas+72+Córdoba+Argentina" target="_blank" rel="noopener" class="contact__detail-value">
+                                Arturo M. Bas 72<br>Córdoba, Argentina
+                            </a>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">WhatsApp</span>
+                            <a href="tel:+5493516413655" class="contact__detail-value">+54 9 351 641 3655</a>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">Horarios</span>
+                            <div class="contact__detail-value">
+                                <p>Lunes a Viernes: 8:00 – 20:00</p>
+                                <p>Sábado: 9:00 – 14:00 / 16:00 – 20:00</p>
+                                <p>Domingo: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://www.instagram.com/elpapagayopetit/?hl=es" class="contact__social-link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__map fade-up delay-1">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Arturo+M.+Bas+72+Córdoba+Argentina&output=embed"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">EL PAPAGAYO</div>
+                    <p class="footer__tagline">Petit Café & Vermouth Bar</p>
+                    <p class="footer__copyright">&copy; 2026 El Papagayo. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Navegación</h4>
+                    <a href="#about" class="footer__link">Nosotros</a>
+                    <a href="#menu" class="footer__link">Menú</a>
+                    <a href="#specialty" class="footer__link">Nuestra Estrella</a>
+                    <a href="#gallery" class="footer__link">Galería</a>
+                    <a href="#contact" class="footer__link">Contacto</a>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Contacto</h4>
+                    <a href="tel:+5493516413655" class="footer__link">+54 9 351 641 3655</a>
+                    <a href="https://maps.google.com/?q=Arturo+M.+Bas+72+Córdoba+Argentina" class="footer__link" target="_blank" rel="noopener">Arturo M. Bas 72, Córdoba</a>
+                    <a href="https://www.instagram.com/elpapagayopetit/?hl=es" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="https://tuweben3dias.com" class="footer__credit" target="_blank" rel="noopener">Hecho con ☕ por tuweben3días.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5493516413655?text=Hola!%20Quiero%20hacer%20una%20consulta" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
